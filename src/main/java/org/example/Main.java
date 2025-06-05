@@ -86,8 +86,14 @@ public class Main {
 
                         }
 
+                        ResultTableCollection resultTableCollection = new ResultTableCollection();
 
-                        table.setModel(new javax.swing.table.DefaultTableModel(data, columnNames));
+                        Analyser analyser = new Analyser(inputTableCollection, resultTableCollection);
+
+                        analyser.analyse();
+
+                        table.setModel(new javax.swing.table.DefaultTableModel(resultTableCollection.getData(),
+                                resultTableCollection.columnNames));
 
                     } catch (IOException | CsvException ex) {
                         ex.printStackTrace();

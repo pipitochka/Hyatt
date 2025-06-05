@@ -8,6 +8,12 @@ import static java.nio.file.Files.find;
 public class ResultTableCollection {
     private List<ResultTable> resultTables;
 
+    String[] columnNames;
+
+    public String[][] getData(){
+        return new String[0][0];
+    };
+
     public Optional<ResultTable> getResultTable(String tableName) {
         return resultTables.stream()
                 .filter(table -> table.getCompanyName().equals(tableName))

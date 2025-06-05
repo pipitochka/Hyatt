@@ -5,6 +5,10 @@ import com.opencsv.CSVParserBuilder;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;
 import com.opencsv.exceptions.CsvException;
+import org.example.domain.InputTable;
+import org.example.repositories.InputTableCollection;
+import org.example.repositories.ResultTableCollection;
+import org.example.services.Analyser;
 
 import javax.swing.*;
 import java.awt.*;

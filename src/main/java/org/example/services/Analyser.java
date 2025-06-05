@@ -1,6 +1,8 @@
-package org.example;
+package org.example.services;
 
 import lombok.RequiredArgsConstructor;
+import org.example.repositories.InputTableCollection;
+import org.example.repositories.ResultTableCollection;
 
 @RequiredArgsConstructor
 public class Analyser {

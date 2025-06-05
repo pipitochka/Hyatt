@@ -1,9 +1,9 @@
-package org.example;
+package org.example.repositories;
+
+import org.example.domain.ResultTable;
 
 import java.util.List;
 import java.util.Optional;
-
-import static java.nio.file.Files.find;
 
 public class ResultTableCollection {
     private List<ResultTable> resultTables;

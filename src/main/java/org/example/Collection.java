@@ -38,4 +38,13 @@ public class Collection {
         return contagentTable;
     }
 
+    public void caclucate(ResultTableCollection resultTableCollection) {
+        for (Table table : tableList) {
+            resultTableCollection.checkTable(table.getContractor());
+            var first = table.getArrivalDate();
+            var last = table.getDepartureDate();
+            long diffMillis = first.getTime() - firstDay.getTime();
+        }
+    }
+
 }

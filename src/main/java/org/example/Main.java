@@ -69,14 +69,14 @@ public class Main {
                             data[i - 1] = rows.get(i);
                         }
 
-                        Collection collection = new Collection();
+                        InputTableCollection inputTableCollection = new InputTableCollection();
 
                         for (int i = 0; i < data.length; i++) {
                             try {
-                                Table newtable = new Table(data[i][0], data[i][1], data[i][2], data[i][3],
+                                InputTable newtable = new InputTable(data[i][0], data[i][1], data[i][2], data[i][3],
                                         data[i][4], data[i][5], data[i][6], data[i][7],
                                         data[i][8], data[i][9], data[i][10]);
-                                collection.add(newtable);
+                                inputTableCollection.add(newtable);
                             } catch (Exception ex) {
                                 JOptionPane.showMessageDialog(frame,
                                         "Ошибка в строке " + (i + 1) + ": " + ex.getMessage(),

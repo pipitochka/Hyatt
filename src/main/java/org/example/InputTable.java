@@ -2,15 +2,13 @@ package org.example;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-public class Table {
+public class InputTable {
     private final String date;
     private final String number;
     private final String contractor;
@@ -40,9 +38,9 @@ public class Table {
         return departureDate;
     }
 
-    public Table(String date, String number, String contractor, String fullName,
-                 String inn, String nomenclature, String description,
-                 String nds, String quantity, String price, String sum) throws Exception{
+    public InputTable(String date, String number, String contractor, String fullName,
+                      String inn, String nomenclature, String description,
+                      String nds, String quantity, String price, String sum) throws Exception{
 
         this.date = date;
         this.number = number;
